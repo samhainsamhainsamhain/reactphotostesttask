@@ -1,15 +1,11 @@
 import React from "react";
 
+import Card from "../UI/Card";
+import { PhotoInterface } from "../../photoInterface/PhotoTypes";
+
 import classes from "./Photo.module.css";
 
-import Card from "../UI/Card";
-
-interface PhotoProps {
-  id: number;
-  url: string;
-}
-
-export default function Photo(props: PhotoProps) {
+export default function Photo(props: PhotoInterface) {
   return (
     <Card>
       <div className={classes.photoContainer}>
