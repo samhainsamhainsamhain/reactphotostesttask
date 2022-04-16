@@ -1,13 +1,9 @@
-import React from "react";
-
-import Photos from "./components/photos/Photos";
-
-import "./App.css";
+import Gallery from "./components/gallery/Gallery";
 
 function App() {
   return (
     <div className="App">
-      <Photos />
+      <Gallery />
     </div>
   );
 }
