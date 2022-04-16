@@ -1,15 +1,15 @@
-export type SmallPhotos = Photo[];
+export type SmallPhotos = PhotoInterface[];
 
-export interface BigPhoto extends Photo {
-  comments: Comment[];
+export interface BigPhoto extends PhotoInterface {
+  comments: CommentInterface[];
 }
 
-export interface Photo {
+export interface PhotoInterface {
   id: number;
   url: string;
 }
 
-export interface Comment {
+export interface CommentInterface {
   id: number;
   text: string;
   date: number;
