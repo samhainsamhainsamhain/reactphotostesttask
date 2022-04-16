@@ -1,0 +1,25 @@
+.photoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}
+
+.photoBackground {
+  display: inline-block;
+  background-color: rgb(50, 50, 50);
+}
+
+.photoImage {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.photoImage:hover {
+  transform: rotate(-3deg);
+}
+
+.photoId {
+  display: inline-block;
+}
