@@ -1,4 +1,4 @@
-.photoContainer {
+.postContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,20 +6,21 @@
   width: fit-content;
 }
 
-.photoBackground {
+.postBackground {
   display: inline-block;
   background-color: rgb(50, 50, 50);
+  height: 200px;
 }
 
-.photoImage {
+.postImage {
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
 }
 
-.photoImage:hover {
+.postImage:hover {
   transform: rotate(-3deg);
 }
 
-.photoId {
+.postId {
   display: inline-block;
 }
