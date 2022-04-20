@@ -1,16 +1,15 @@
-import React, { useState } from "react";
-
+import BigPost from "../bigPost/BigPost";
 import Card from "../UI/Card";
 import { IPhoto } from "../../Objects";
-import Modal from "../UI/Modal";
-import { useModal } from "../UI/UseModal";
 
 import classes from "./Post.module.css";
+import Modal from "../UI/Modal";
+import { useModal } from "../UI/UseModal";
 
 export default function Post(props: IPhoto) {
   const { isShown, toggle } = useModal();
 
-  const content = <div>TEST POPUP</div>
+  const content = <BigPost id={props.id} />
 
   return (
     <>
@@ -27,12 +26,7 @@ export default function Post(props: IPhoto) {
           <div className={classes.postId}>Post #{props.id}</div>
         </div>
       </Card>
-      <Modal
-        isShown={isShown}
-        hide={toggle}
-        modalContent={content}
-        headerText={""}
-      />
+      <Modal isShown={isShown} hide={toggle} modalContent={content} headerText={""}  />
     </>
   );
 }
