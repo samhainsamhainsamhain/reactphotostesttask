@@ -1,0 +1,37 @@
+.comment {
+    margin-top: 15px;
+    padding: 15px;
+    display: flex;
+    background-color: rgb(233, 233, 233);
+}
+
+.commentAvatar {
+    width: 50px;
+    height: 50px;
+    background-color: rebeccapurple;
+}
+
+.commentBox {
+    padding-left: 10px;
+}
+
+.commentNickname {
+    margin: 0;
+    font-size: 20px;
+}
+
+.commentText {
+    margin: 0;
+}
+
+.commentForm {
+    padding-top: 15px;
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.commentInput {
+    padding: 10px 5px;
+}
